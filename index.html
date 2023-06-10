@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome ICON CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App | upCoding</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top">
+        <input id="input" type="text" placeholder="Search Weather..." />
+        <span id="error">Error!</span>
+        <button id="btn">
+          <i class="fa-solid fa-magnifying-glass"></i>Search
+        </button>
+      </div>
+
+      <div class="middle">
+        <img src="./icons/day.svg" id="weather-icon" />
+        <div class="weather-details">
+          <span class="temp">22°C</span>
+          <span id="feels-like">22°C</span>
+          <span class="desc">Sunny</span>
+          <span class="country">Delhi, India</span>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <div class="col">
+          <i class="fa-solid fa-droplet"></i>
+          <div>
+            <span id="humidity">90%</span>
+            <span>Humidity</span>
+          </div>
+        </div>
+        <div class="col">
+          <i class="fa-solid fa-wind"></i>
+          <div>
+            <span id="wind-speed">5 Km/hr</span>
+            <span>Wind Speed</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Script.js -->
+    <script src="script.js"></script>
+  </body>
+</html>
